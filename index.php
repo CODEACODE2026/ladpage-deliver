@@ -192,27 +192,41 @@ include __DIR__ . '/includes/header.php';
                 </div>
                 <p class="hero__note">Atendimento direto pelo WhatsApp: <?php echo htmlspecialchars($site['phone']); ?></p>
             </div>
-            <div class="product-preview" aria-label="Prévia de atendimento automatizado no WhatsApp">
+            <div class="product-preview" aria-label="Prévia do sistema de atendimento para delivery no WhatsApp">
                 <div class="product-preview__bar">
-                    <strong>Pedido via WhatsApp</strong>
-                    <span>online</span>
+                    <div>
+                        <strong>Central Delivery</strong>
+                        <small>WhatsApp conectado</small>
+                    </div>
+                    <span>ao vivo</span>
                 </div>
-                <div class="chat">
-                    <p class="chat__message chat__message--client">Boa noite, vocês entregam no meu bairro?</p>
-                    <p class="chat__message chat__message--system">Sim. Vou te ajudar a seguir com o pedido sem perder tempo.</p>
+                <div class="product-preview__body">
+                    <div class="chat">
+                        <div class="chat__header">
+                            <strong>Atendimento em andamento</strong>
+                            <span>2 min</span>
+                        </div>
+                        <p class="chat__message chat__message--client">Boa noite, vocês entregam no meu bairro?</p>
+                        <p class="chat__message chat__message--system">Sim. Vou te ajudar a seguir com o pedido sem perder tempo.</p>
+                        <p class="chat__message chat__message--client">Quero ver cardápio e taxa de entrega.</p>
+                        <p class="chat__tag">Menos espera antes da fome virar compra em outro lugar</p>
+                    </div>
                     <div class="order-summary">
-                        <strong>Conversa mais pronta para venda</strong>
+                        <strong>Conversa pronta para venda</strong>
                         <span>Interesse identificado</span>
                         <span>Dúvida principal respondida</span>
                         <span>Equipe entra com mais contexto</span>
                     </div>
-                    <p class="chat__tag">Menos espera antes da fome virar compra em outro lugar</p>
+                </div>
+                <div class="preview-metrics" aria-label="Indicadores do atendimento">
+                    <span><strong>+ rapidez</strong> no primeiro contato</span>
+                    <span><strong>- retrabalho</strong> para a equipe</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="section section--problem" id="problema">
+    <section class="section section--problem section--angled" id="problema">
         <div class="container split">
             <div>
                 <p class="eyebrow">O problema</p>
@@ -232,7 +246,7 @@ include __DIR__ . '/includes/header.php';
         </div>
     </section>
 
-    <section class="section" id="solucao">
+    <section class="section section--solution" id="solucao">
         <div class="container solution-grid">
             <div>
                 <p class="eyebrow">A solução</p>
@@ -251,14 +265,14 @@ include __DIR__ . '/includes/header.php';
         </div>
     </section>
 
-    <section class="section section--muted" id="confianca">
+    <section class="section section--trust" id="confianca">
         <div class="container">
             <div class="section__header">
                 <p class="eyebrow">Por que confiar</p>
                 <h2>Não é só uma página bonita. É uma ponte para vender melhor no WhatsApp.</h2>
                 <p>O argumento da landing precisa mostrar que a solução entende a rotina real de quem vive de delivery.</p>
             </div>
-            <div class="cards cards--three">
+            <div class="cards cards--three cards--trust">
                 <?php foreach ($trustSignals as $signal): ?>
                     <article class="card">
                         <h3><?php echo htmlspecialchars($signal['title']); ?></h3>
@@ -269,13 +283,13 @@ include __DIR__ . '/includes/header.php';
         </div>
     </section>
 
-    <section class="section section--muted" id="beneficios">
+    <section class="section section--muted section--benefits" id="beneficios">
         <div class="container">
             <div class="section__header">
                 <p class="eyebrow">Benefícios</p>
                 <h2>Benefícios que o dono do delivery percebe rápido.</h2>
             </div>
-            <div class="cards cards--three">
+            <div class="cards cards--three cards--benefits">
                 <?php foreach ($benefits as $benefit): ?>
                     <article class="card">
                         <h3><?php echo htmlspecialchars($benefit['title']); ?></h3>
@@ -286,14 +300,14 @@ include __DIR__ . '/includes/header.php';
         </div>
     </section>
 
-    <section class="section" id="como-funciona">
+    <section class="section section--steps" id="como-funciona">
         <div class="container">
             <div class="section__header">
                 <p class="eyebrow">Como funciona</p>
                 <h2>Da dor do WhatsApp cheio até a demonstração.</h2>
                 <p>A página não tenta explicar tudo. Ela conduz o visitante pelo problema, pela solução e pelo próximo passo.</p>
             </div>
-            <div class="steps">
+            <div class="steps steps--flow">
                 <?php foreach ($steps as $index => $step): ?>
                     <article class="step">
                         <strong><?php echo $index + 1; ?></strong>
@@ -323,14 +337,14 @@ include __DIR__ . '/includes/header.php';
         </div>
     </section>
 
-    <section class="section" id="funcionalidades">
+    <section class="section section--features" id="funcionalidades">
         <div class="container">
             <div class="section__header">
                 <p class="eyebrow">Funcionalidades</p>
                 <h2>O essencial para transformar curiosidade em pedido de demonstração.</h2>
                 <p>Sem complicar a tecnologia: a página apresenta o valor, reduz objeções e leva o comerciante ao WhatsApp.</p>
             </div>
-            <div class="cards cards--three">
+            <div class="cards cards--three cards--features">
                 <?php foreach ($features as $feature): ?>
                     <article class="card">
                         <h3><?php echo htmlspecialchars($feature['title']); ?></h3>
