@@ -6,33 +6,33 @@ $site = [
     'whatsapp' => '5544998212815',
 ];
 
-$whatsappMessage = rawurlencode('Olá! Quero uma demonstração do sistema de delivery automatizado com WhatsApp.');
+$whatsappMessage = rawurlencode('Olá! Quero ver como organizar os pedidos do meu delivery pelo WhatsApp.');
 $whatsappUrl = 'https://wa.me/' . $site['whatsapp'] . '?text=' . $whatsappMessage;
 
 $benefits = [
     [
-        'title' => 'Pedidos mais organizados',
-        'description' => 'A conversa fica mais clara para sua equipe entender o que o cliente quer pedir.',
+        'title' => 'Venda antes da fila esfriar',
+        'description' => 'O cliente chega com intenção clara e sua equipe ganha tempo para continuar o pedido no WhatsApp.',
     ],
     [
-        'title' => 'Menos demora para responder',
-        'description' => 'O atendimento inicial ajuda o cliente a avançar enquanto sua equipe cuida da operação.',
+        'title' => 'Menos retrabalho no atendimento',
+        'description' => 'A conversa começa mais direcionada, reduzindo perguntas repetidas em horário de pico.',
     ],
     [
-        'title' => 'Menos clientes perdidos',
-        'description' => 'Quando a resposta demora, o cliente compra em outro lugar. A página vende rapidez e controle.',
+        'title' => 'Menos pedido perdido',
+        'description' => 'Quando o cliente demora para ser atendido, ele chama outro delivery. A página encurta esse caminho.',
     ],
     [
-        'title' => 'Mais profissionalismo',
-        'description' => 'Seu delivery deixa de parecer improvisado e passa mais confiança pelo WhatsApp.',
+        'title' => 'Mais confiança desde o primeiro clique',
+        'description' => 'O delivery deixa de parecer improvisado e passa uma experiência mais profissional.',
     ],
     [
-        'title' => 'Contato mais fácil',
-        'description' => 'Os botões levam direto para uma conversa com mensagem pronta para pedir demonstração.',
+        'title' => 'Contato sem fricção',
+        'description' => 'Os CTAs levam direto para o WhatsApp com mensagem pronta para pedir demonstração.',
     ],
     [
-        'title' => 'Mais foco em venda',
-        'description' => 'A landing explica o valor rápido e conduz o comerciante para falar com você.',
+        'title' => 'Argumento de venda mais claro',
+        'description' => 'A página mostra dor, solução e próximos passos sem exigir que o comerciante adivinhe o valor.',
     ],
 ];
 
@@ -56,70 +56,74 @@ $audiences = [
 ];
 
 $painPoints = [
-    'Pedidos importantes ficam perdidos no meio de várias conversas.',
-    'O cliente espera demais e chama outro delivery.',
-    'A equipe precisa perguntar as mesmas informações toda hora.',
-    'O atendimento parece improvisado, mesmo quando o produto é bom.',
+    'No almoço ou à noite, várias mensagens chegam ao mesmo tempo e a equipe perde contexto.',
+    'O cliente pede cardápio, forma de pagamento e taxa de entrega em conversas soltas.',
+    'A demora para responder faz o cliente chamar outro delivery antes de fechar o pedido.',
+    'O atendimento parece improvisado mesmo quando a comida, a entrega e a equipe são bons.',
 ];
 
 $steps = [
     [
-        'title' => 'Cliente chama',
-        'description' => 'O visitante toca no botão e entra em contato pelo WhatsApp com mensagem pronta.',
+        'title' => 'Cliente chega com intenção',
+        'description' => 'O comerciante toca no CTA e inicia uma conversa objetiva para ver a demonstração.',
     ],
     [
-        'title' => 'Atendimento começa',
-        'description' => 'O fluxo inicial ajuda a organizar a conversa antes que o cliente desista.',
+        'title' => 'A dor fica clara',
+        'description' => 'A página mostra o custo de pedidos perdidos, demora e atendimento sem padrão.',
     ],
     [
-        'title' => 'Pedido fica claro',
-        'description' => 'Sua equipe recebe uma conversa mais objetiva para continuar o atendimento.',
+        'title' => 'A solução parece simples de testar',
+        'description' => 'O visitante entende que pode melhorar o WhatsApp atual sem trocar de canal ou instalar algo pesado.',
     ],
 ];
 
 $features = [
     [
-        'title' => 'Entrada direta pelo WhatsApp',
-        'description' => 'O cliente chega pelo canal que ele já usa, sem precisar aprender outro aplicativo.',
+        'title' => 'Entrada pelo canal que o cliente já usa',
+        'description' => 'O atendimento continua no WhatsApp, sem exigir aplicativo novo nem mudança brusca na rotina.',
     ],
     [
-        'title' => 'Mensagem inicial pronta',
-        'description' => 'O contato começa com uma mensagem clara, reduzindo conversa perdida e pedido incompleto.',
+        'title' => 'Mensagem com contexto',
+        'description' => 'A conversa começa com intenção definida, facilitando a resposta de quem está atendendo.',
     ],
     [
-        'title' => 'Atendimento mais guiado',
-        'description' => 'A comunicação fica mais objetiva para sua equipe entender o interesse do cliente.',
+        'title' => 'Roteiro comercial mais claro',
+        'description' => 'A página conduz o dono do delivery pela dor, pelo ganho e pelo próximo passo.',
     ],
     [
-        'title' => 'Foco em demonstração',
-        'description' => 'A página conduz o comerciante para pedir uma demonstração pelo WhatsApp.',
+        'title' => 'CTA para demonstração',
+        'description' => 'A ação principal é direta: chamar no WhatsApp para ver como funcionaria no negócio.',
     ],
     [
-        'title' => 'Layout responsivo',
-        'description' => 'A experiência foi pensada para celular, onde a maioria dos donos de negócio responde.',
+        'title' => 'Experiência pensada para celular',
+        'description' => 'A maioria dos donos de delivery responde pelo telefone; a página precisa vender bem no mobile.',
     ],
     [
-        'title' => 'Sem sistema pesado',
-        'description' => 'Landing leve, sem banco de dados e pronta para hospedagem compartilhada.',
+        'title' => 'Página leve e fácil de publicar',
+        'description' => 'Sem banco de dados, sem build e pronta para hospedagem compartilhada/cPanel.',
     ],
 ];
 
 $comparisons = [
     [
-        'before' => 'Cliente manda mensagem e espera resposta.',
-        'after' => 'Cliente entra por um CTA claro e já inicia uma conversa direcionada.',
+        'before' => 'O cliente manda mensagem solta e espera alguém entender o pedido.',
+        'after' => 'O contato começa com intenção clara e direciona a conversa para a próxima ação.',
     ],
     [
-        'before' => 'Pedidos se misturam com dúvidas, orçamento e conversa antiga.',
-        'after' => 'O atendimento começa com contexto e fica mais fácil de continuar.',
+        'before' => 'Pedidos, dúvidas e orçamentos se misturam no mesmo WhatsApp.',
+        'after' => 'A página separa a proposta, reduz objeções e leva o interessado para uma demonstração.',
     ],
     [
-        'before' => 'O delivery parece improvisado no WhatsApp.',
-        'after' => 'O negócio passa mais profissionalismo desde o primeiro contato.',
+        'before' => 'O delivery parece depender de sorte para responder rápido.',
+        'after' => 'O negócio transmite processo, controle e confiança antes da conversa começar.',
     ],
 ];
 
 $faqs = [
+    [
+        'question' => 'Isso substitui minha equipe de atendimento?',
+        'answer' => 'Não. A proposta é organizar a entrada da conversa para sua equipe responder com mais contexto e menos retrabalho.',
+    ],
     [
         'question' => 'Preciso trocar meu WhatsApp atual?',
         'answer' => 'Não. A ideia é aproveitar o WhatsApp que o comerciante já usa e organizar melhor o caminho até o atendimento.',
@@ -137,8 +141,27 @@ $faqs = [
         'answer' => 'Sim. A proposta atende negócios de delivery que recebem pedidos e dúvidas pelo WhatsApp.',
     ],
     [
+        'question' => 'Preciso mudar meu cardápio ou sistema atual?',
+        'answer' => 'Não para começar a demonstração. O primeiro passo é entender seu fluxo atual e mostrar onde o WhatsApp pode ficar mais organizado.',
+    ],
+    [
         'question' => 'Essa landing usa banco de dados?',
         'answer' => 'Não. Esta versão é uma página simples em PHP, HTML, CSS e JavaScript, pronta para cPanel.',
+    ],
+];
+
+$trustSignals = [
+    [
+        'title' => 'Pensado para horário de pico',
+        'description' => 'A comunicação fala com quem precisa vender enquanto a cozinha, o balcão e a entrega estão pressionados.',
+    ],
+    [
+        'title' => 'Sem trocar o canal principal',
+        'description' => 'O WhatsApp continua sendo o ponto de contato, reduzindo resistência para testar a solução.',
+    ],
+    [
+        'title' => 'Demonstração antes de decidir',
+        'description' => 'O comerciante pode ver o fluxo aplicado ao negócio antes de assumir qualquer compromisso.',
     ],
 ];
 
@@ -150,22 +173,22 @@ include __DIR__ . '/includes/header.php';
     <section class="hero" id="inicio">
         <div class="container hero__grid">
             <div class="hero__content">
-                <p class="eyebrow">Sistema para delivery com WhatsApp</p>
-                <h1>Transforme seu WhatsApp em uma central de pedidos para delivery.</h1>
+                <p class="eyebrow">Para deliveries que vendem pelo WhatsApp</p>
+                <h1>Pare de perder pedidos quando o WhatsApp fica cheio no horário de pico.</h1>
                 <p class="hero__text">
-                    Receba clientes com mais rapidez, organize conversas e reduza pedidos perdidos com uma solução simples
-                    para restaurantes, lanchonetes, pizzarias e pequenos negócios.
+                    Organize a entrada do atendimento, reduza conversa perdida e mostre ao cliente que seu delivery tem
+                    processo, rapidez e confiança desde o primeiro contato.
                 </p>
                 <div class="hero__proof" aria-label="Destaques do sistema">
+                    <span>Feito para pico de pedidos</span>
                     <span>Sem trocar de WhatsApp</span>
-                    <span>Feito para delivery</span>
-                    <span>Demonstração rápida</span>
+                    <span>Demonstração antes de decidir</span>
                 </div>
                 <div class="hero__actions">
                     <a class="button button--primary" href="<?php echo htmlspecialchars($whatsappUrl); ?>" target="_blank" rel="noopener">
-                        Pedir demonstração no WhatsApp
+                        Ver demonstração no WhatsApp
                     </a>
-                    <a class="button button--secondary" href="#como-funciona">Ver como funciona</a>
+                    <a class="button button--secondary" href="#problema">Ver o problema que resolve</a>
                 </div>
                 <p class="hero__note">Atendimento direto pelo WhatsApp: <?php echo htmlspecialchars($site['phone']); ?></p>
             </div>
@@ -175,15 +198,15 @@ include __DIR__ . '/includes/header.php';
                     <span>online</span>
                 </div>
                 <div class="chat">
-                    <p class="chat__message chat__message--client">Olá, quero fazer um pedido.</p>
-                    <p class="chat__message chat__message--system">Perfeito. Vou te ajudar a organizar seu pedido.</p>
+                    <p class="chat__message chat__message--client">Boa noite, vocês entregam no meu bairro?</p>
+                    <p class="chat__message chat__message--system">Sim. Vou te ajudar a seguir com o pedido sem perder tempo.</p>
                     <div class="order-summary">
-                        <strong>Resumo do atendimento</strong>
-                        <span>Cliente identificado</span>
-                        <span>Pedido iniciado</span>
-                        <span>Equipe com conversa mais clara</span>
+                        <strong>Conversa mais pronta para venda</strong>
+                        <span>Interesse identificado</span>
+                        <span>Dúvida principal respondida</span>
+                        <span>Equipe entra com mais contexto</span>
                     </div>
-                    <p class="chat__tag">Mais organização antes da venda esfriar</p>
+                    <p class="chat__tag">Menos espera antes da fome virar compra em outro lugar</p>
                 </div>
             </div>
         </div>
@@ -193,12 +216,12 @@ include __DIR__ . '/includes/header.php';
         <div class="container split">
             <div>
                 <p class="eyebrow">O problema</p>
-                <h2>Atendimento manual no WhatsApp faz você perder pedidos.</h2>
+                <h2>Atendimento manual no WhatsApp vira gargalo justamente quando mais deveria vender.</h2>
             </div>
             <div>
                 <p>
-                    Quando muitas mensagens chegam ao mesmo tempo, pedidos se misturam, clientes esperam demais e algumas
-                    vendas desaparecem no meio da conversa.
+                    O problema não é vender pelo WhatsApp. O problema é depender de resposta manual, memória da equipe
+                    e conversas soltas no momento em que o cliente está com pressa para pedir.
                 </p>
                 <ul class="pain-list">
                     <?php foreach ($painPoints as $pain): ?>
@@ -213,17 +236,35 @@ include __DIR__ . '/includes/header.php';
         <div class="container solution-grid">
             <div>
                 <p class="eyebrow">A solução</p>
-                <h2>Um sistema simples para organizar seu delivery pelo WhatsApp.</h2>
+                <h2>Uma entrada mais profissional para o mesmo WhatsApp que seu delivery já usa.</h2>
                 <p>
-                    Seu cliente chama, recebe uma condução inicial mais rápida e sua equipe continua a conversa com mais
-                    clareza. A venda não depende de sorte nem de lembrar cada mensagem manualmente.
+                    A página posiciona a solução, responde objeções e leva o dono do delivery para uma conversa de
+                    demonstração. O foco é mostrar como o atendimento pode ficar mais claro sem criar uma operação pesada.
                 </p>
             </div>
             <div class="solution-panel">
-                <strong>O que muda no atendimento</strong>
-                <span>Menos mensagens soltas</span>
-                <span>Mais clareza para fechar pedidos</span>
-                <span>Mais confiança para o cliente comprar</span>
+                <strong>O que muda na percepção</strong>
+                <span>De atendimento improvisado para processo claro</span>
+                <span>De resposta demorada para conversa direcionada</span>
+                <span>De dúvida solta para demonstração objetiva</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section--muted" id="confianca">
+        <div class="container">
+            <div class="section__header">
+                <p class="eyebrow">Por que confiar</p>
+                <h2>Não é só uma página bonita. É uma ponte para vender melhor no WhatsApp.</h2>
+                <p>O argumento da landing precisa mostrar que a solução entende a rotina real de quem vive de delivery.</p>
+            </div>
+            <div class="cards cards--three">
+                <?php foreach ($trustSignals as $signal): ?>
+                    <article class="card">
+                        <h3><?php echo htmlspecialchars($signal['title']); ?></h3>
+                        <p><?php echo htmlspecialchars($signal['description']); ?></p>
+                    </article>
+                <?php endforeach; ?>
             </div>
         </div>
     </section>
@@ -232,7 +273,7 @@ include __DIR__ . '/includes/header.php';
         <div class="container">
             <div class="section__header">
                 <p class="eyebrow">Benefícios</p>
-                <h2>Mais controle no atendimento, mais chances de vender.</h2>
+                <h2>Benefícios que o dono do delivery percebe rápido.</h2>
             </div>
             <div class="cards cards--three">
                 <?php foreach ($benefits as $benefit): ?>
@@ -249,8 +290,8 @@ include __DIR__ . '/includes/header.php';
         <div class="container">
             <div class="section__header">
                 <p class="eyebrow">Como funciona</p>
-                <h2>Em 3 passos simples.</h2>
-                <p>O objetivo é tirar o cliente da dúvida e levar a conversa para uma demonstração rápida no WhatsApp.</p>
+                <h2>Da dor do WhatsApp cheio até a demonstração.</h2>
+                <p>A página não tenta explicar tudo. Ela conduz o visitante pelo problema, pela solução e pelo próximo passo.</p>
             </div>
             <div class="steps">
                 <?php foreach ($steps as $index => $step): ?>
@@ -268,7 +309,7 @@ include __DIR__ . '/includes/header.php';
         <div class="container">
             <div class="section__header">
                 <p class="eyebrow">Para quem é</p>
-                <h2>Feito para negócios que vendem por delivery.</h2>
+                <h2>Feito para negócios que perdem venda quando a conversa atrasa.</h2>
                 <p>Especialmente útil para quem já atende pelo WhatsApp, mas sente que o volume de mensagens atrapalha a venda.</p>
             </div>
             <div class="audience-grid">
@@ -286,8 +327,8 @@ include __DIR__ . '/includes/header.php';
         <div class="container">
             <div class="section__header">
                 <p class="eyebrow">Funcionalidades</p>
-                <h2>O essencial para transformar visita em conversa.</h2>
-                <p>Sem complicar a tecnologia: a página apresenta o produto, responde dúvidas e leva o comerciante ao WhatsApp.</p>
+                <h2>O essencial para transformar curiosidade em pedido de demonstração.</h2>
+                <p>Sem complicar a tecnologia: a página apresenta o valor, reduz objeções e leva o comerciante ao WhatsApp.</p>
             </div>
             <div class="cards cards--three">
                 <?php foreach ($features as $feature): ?>
@@ -327,12 +368,12 @@ include __DIR__ . '/includes/header.php';
         <div class="container cta cta-box">
             <div>
                 <p class="eyebrow">Demonstração</p>
-                <h2>Quer ver como isso funcionaria no seu delivery?</h2>
-                <p>Fale comigo no WhatsApp. Em poucos minutos eu te mostro como a página pode ajudar seu delivery a atender melhor e vender mais.</p>
+                <h2>Quer ver como seu delivery poderia atender com mais clareza no WhatsApp?</h2>
+                <p>Fale comigo no WhatsApp. Em poucos minutos eu te mostro como reduzir conversa perdida e conduzir melhor os pedidos.</p>
             </div>
             <div class="cta__action">
                 <a class="button button--primary" href="<?php echo htmlspecialchars($whatsappUrl); ?>" target="_blank" rel="noopener">
-                    Pedir demonstração agora
+                    Quero ver a demonstração
                 </a>
                 <span>Resposta pelo WhatsApp: <?php echo htmlspecialchars($site['phone']); ?></span>
             </div>
