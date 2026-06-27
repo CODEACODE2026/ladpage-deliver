@@ -211,11 +211,24 @@ include __DIR__ . '/includes/header.php';
                         <p class="chat__message chat__message--client">Quero ver cardápio e taxa de entrega.</p>
                         <p class="chat__tag">Menos espera antes da fome virar compra em outro lugar</p>
                     </div>
+                    <div class="delivery-queue" aria-label="Fila de pedidos simulada">
+                        <div>
+                            <strong>Fila agora</strong>
+                            <span>3 conversas aguardando resposta</span>
+                        </div>
+                        <div>
+                            <strong>Status</strong>
+                            <span>Pedido quase pronto para atendimento</span>
+                        </div>
+                    </div>
                     <div class="order-summary">
                         <strong>Conversa pronta para venda</strong>
                         <span>Interesse identificado</span>
                         <span>Dúvida principal respondida</span>
                         <span>Equipe entra com mais contexto</span>
+                        <div class="progress-line" aria-hidden="true">
+                            <i></i>
+                        </div>
                     </div>
                 </div>
                 <div class="preview-metrics" aria-label="Indicadores do atendimento">
@@ -237,7 +250,7 @@ include __DIR__ . '/includes/header.php';
                     O problema não é vender pelo WhatsApp. O problema é depender de resposta manual, memória da equipe
                     e conversas soltas no momento em que o cliente está com pressa para pedir.
                 </p>
-                <ul class="pain-list">
+                <ul class="pain-list pain-list--timeline">
                     <?php foreach ($painPoints as $pain): ?>
                         <li><?php echo htmlspecialchars($pain); ?></li>
                     <?php endforeach; ?>
@@ -326,7 +339,7 @@ include __DIR__ . '/includes/header.php';
                 <h2>Feito para negócios que perdem venda quando a conversa atrasa.</h2>
                 <p>Especialmente útil para quem já atende pelo WhatsApp, mas sente que o volume de mensagens atrapalha a venda.</p>
             </div>
-            <div class="audience-grid">
+            <div class="audience-badges">
                 <?php foreach ($audiences as $audience): ?>
                     <article class="audience-card">
                         <h3><?php echo htmlspecialchars($audience['name']); ?></h3>
@@ -344,13 +357,21 @@ include __DIR__ . '/includes/header.php';
                 <h2>O essencial para transformar curiosidade em pedido de demonstração.</h2>
                 <p>Sem complicar a tecnologia: a página apresenta o valor, reduz objeções e leva o comerciante ao WhatsApp.</p>
             </div>
-            <div class="cards cards--three cards--features">
-                <?php foreach ($features as $feature): ?>
-                    <article class="card">
-                        <h3><?php echo htmlspecialchars($feature['title']); ?></h3>
-                        <p><?php echo htmlspecialchars($feature['description']); ?></p>
-                    </article>
-                <?php endforeach; ?>
+            <div class="feature-console">
+                <div class="feature-console__summary">
+                    <strong>Central de conversão</strong>
+                    <span>WhatsApp como ponto de entrada</span>
+                    <span>Mensagem com contexto</span>
+                    <span>Demonstração como próxima ação</span>
+                </div>
+                <div class="feature-console__grid">
+                    <?php foreach ($features as $feature): ?>
+                        <article class="feature-item">
+                            <h3><?php echo htmlspecialchars($feature['title']); ?></h3>
+                            <p><?php echo htmlspecialchars($feature['description']); ?></p>
+                        </article>
+                    <?php endforeach; ?>
+                </div>
             </div>
         </div>
     </section>
@@ -378,8 +399,8 @@ include __DIR__ . '/includes/header.php';
         </div>
     </section>
 
-    <section class="section" id="demonstracao">
-        <div class="container cta cta-box">
+    <section class="section section--final-cta" id="demonstracao">
+        <div class="container cta cta-box cta-box--premium">
             <div>
                 <p class="eyebrow">Demonstração</p>
                 <h2>Quer ver como seu delivery poderia atender com mais clareza no WhatsApp?</h2>
@@ -389,7 +410,8 @@ include __DIR__ . '/includes/header.php';
                 <a class="button button--primary" href="<?php echo htmlspecialchars($whatsappUrl); ?>" target="_blank" rel="noopener">
                     Quero ver a demonstração
                 </a>
-                <span>Resposta pelo WhatsApp: <?php echo htmlspecialchars($site['phone']); ?></span>
+                <span>Demonstração direta pelo WhatsApp: <?php echo htmlspecialchars($site['phone']); ?></span>
+                <small>Sem compromisso, sem trocar seu canal atual.</small>
             </div>
         </div>
     </section>

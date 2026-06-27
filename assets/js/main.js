@@ -14,3 +14,21 @@ if (menuButton && siteMenu) {
         });
     });
 }
+
+const revealItems = document.querySelectorAll('.section, .product-preview, .card, .step, .feature-item');
+const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+if (!reduceMotion && 'IntersectionObserver' in window) {
+    revealItems.forEach((item) => item.classList.add('reveal-ready'));
+
+    const revealObserver = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('is-visible');
+                revealObserver.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.12 });
+
+    revealItems.forEach((item) => revealObserver.observe(item));
+}
