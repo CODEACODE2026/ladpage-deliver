@@ -1,5 +1,14 @@
 const menuButton = document.querySelector('.menu-toggle');
 const siteMenu = document.querySelector('#site-menu');
+const siteHeader = document.querySelector('.site-header');
+
+const updateHeaderState = () => {
+    if (!siteHeader) {
+        return;
+    }
+
+    siteHeader.classList.toggle('is-scrolled', window.scrollY > 12);
+};
 
 if (menuButton && siteMenu) {
     menuButton.addEventListener('click', () => {
@@ -14,6 +23,9 @@ if (menuButton && siteMenu) {
         });
     });
 }
+
+updateHeaderState();
+window.addEventListener('scroll', updateHeaderState, { passive: true });
 
 const revealItems = document.querySelectorAll('.section, .product-preview, .card, .step, .feature-item');
 const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;

@@ -200,6 +200,11 @@ include __DIR__ . '/includes/header.php';
                     </div>
                     <span>ao vivo</span>
                 </div>
+                <div class="product-status-strip" aria-label="Status do atendimento">
+                    <span>Novo pedido</span>
+                    <span>Triagem rápida</span>
+                    <span>Equipe acionada</span>
+                </div>
                 <div class="product-preview__body">
                     <div class="chat">
                         <div class="chat__header">
@@ -412,6 +417,11 @@ include __DIR__ . '/includes/header.php';
                 </a>
                 <span>Demonstração direta pelo WhatsApp: <?php echo htmlspecialchars($site['phone']); ?></span>
                 <small>Sem compromisso, sem trocar seu canal atual.</small>
+                <div class="cta-proof" aria-label="Resumo da proposta">
+                    <span>Sem app novo</span>
+                    <span>Sem banco de dados</span>
+                    <span>Pronto para cPanel</span>
+                </div>
             </div>
         </div>
     </section>
